@@ -1,0 +1,242 @@
+.wrapper{
+	    z-index: 90;
+    background-color: #ffd83a;
+        position: fixed;
+    width: 100%;
+}
+
+.ank{
+	height: 2230px;
+}
+
+.nav{
+	height: 32px;
+}
+
+.nav .img{
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/home.png);
+	margin-top: 7px;
+	float: left;
+}
+
+.nav p{
+	margin-top: 5px;
+	margin-left: 10px;
+	float: left;
+}
+
+.nav a{
+	color: #000;
+}
+
+.nav a:hover{
+	text-decoration:none;
+}
+
+.main_content{
+	/*height: 1370px;*/
+}
+
+.main_content{
+background-image: url(../img/anketa_bg.jpg);
+}
+
+.anketa{
+	width: 676px;
+	/*height: 1740px;*/
+	margin: 60px auto;
+	background-color: #fafafa;
+	padding:37px 50px 47px 54px;
+}
+
+.anketa p{
+	text-align: center;
+	font-family: "Lato Light";
+	font-size:15px;
+}
+
+.ank_name{
+	margin:0 auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.anketa p:nth-child(2){
+	margin-top: 40px;
+}
+
+.ank_name h3{
+	font-family: "Lato Bold";
+	font-size: 20px;
+}
+
+.anketa_buttons{
+	width: 426px;
+	height: 38px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.anketa_buttons #email{
+	margin-left: 30px;
+}
+
+.fields{
+	/*height: 750px;*/
+}
+
+.fields .field:nth-child(1){
+	margin-top: 0px;
+}
+
+.field{
+	width:100%;
+	float:left;
+	margin-top: 18px;
+}
+
+.field input[type="text"],.field input[type="file"].docs {
+	width:403px;
+	height: 40px;
+	float:right;
+	border-radius: 5px;
+	font-family: "Lato Light";
+	font-size: 16px;
+	padding-left: 15px;
+}
+
+.field input[type="file"].docs{
+	margin-left: 190px;
+	position: absolute;
+	opacity: 0;
+	width: 370px; 
+	background-color: #eee;
+	z-index: 2;
+}
+
+
+.field input[type="text"].show_name{
+	width: 250px;
+    opacity: 0.5;
+    background-color: #eee;
+}
+
+
+.field img{
+	float: right;
+	margin-left: 28px;
+}
+
+.field label{
+	font-family: "Lato Light";
+	font-size:16px;
+	
+	width: 160px;
+	text-align: right;
+	padding-right: 27px;
+	color:#585858;
+}
+
+#price{
+	height: 97px;
+}
+
+.field #comment{
+	font-family: "Lato Light";
+	font-size:12px;
+	color:#9e9e9e;
+	width:403px;
+	text-align: center;
+	padding-right: 0px;
+}
+
+#sex label{
+	float:none;
+}
+
+.btns{
+	width: 100%;
+	height: 36px;
+	float: left;
+	margin-top: 25px;
+}
+
+.btns .prev p, .btns .next p{
+	color:#000;
+	margin-top: 0px;
+	float: left;
+}
+
+.btns .prev p{
+	margin-left: 28px;
+}
+
+.btns .prev img{
+	float: left;
+}
+
+.btns .next img{
+	float: right;
+}
+
+
+.btns .prev, .btns .next{
+	color: #ffd83a;
+	width: 163px;
+	height: 36px;
+	padding:7px 13px 5px 35px;
+}
+
+.btns .prev{
+	padding:6px 43px 6px 19px;
+}
+
+.btns .next{
+	float: right;
+}
+
+
+/*------------Стилизация кнопок туда-сюда--------*/
+
+a.next, a.prev{
+	background-color: #ffd83a;
+	text-decoration: none;
+	color:#000;
+	text-transform: uppercase;
+	height: 36px;
+}
+a.prev{
+	float: left;
+}
+
+a.next{
+	margin-left: 32px;
+	float: right;
+}
+
+.but_navigation{
+	float: left;
+	width: 580px;
+	margin-top: 40px;
+}
+
+#SaveAccount{
+	top: -45px;
+    float: right;
+    position: relative;
+}
+
+fieldset .field select{
+	float: right;
+	width: 403px;
+	height:40px;
+}
+
+.knopka{
+	width: 165px;
+	height: 35px;
+	background-color: #ffd83a;
+}

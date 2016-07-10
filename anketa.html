@@ -1,0 +1,984 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Анкета на займ</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/slider.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/anketa.css">
+<link rel="stylesheet" href="css/callback.css">
+<link rel="stylesheet" href="css/media.css">
+
+
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/list_drop.js"></script>
+<script type="text/javascript" src="js/anketa.js"></script>
+<script type="text/javascript" src="js/callback.js"></script>
+
+<script type="text/javascript">
+        function MakeWizard() {
+            $("#first_form").formToWizard({
+            	submitButton: 'SaveAccount' 
+            })
+            $("#makeWizard").hide();
+            $("#info").fadeIn(400);
+        }
+
+        $(document).ready(function(){
+			MakeWizard();
+		});
+
+
+</script>
+
+
+
+
+</head>
+
+<body class="ank">
+<div class="wrapper">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-lg-12">
+            	<div class="topline">
+                <div class="left_txt">Займом на обучение уже воспользовались <span>1230</span> человек</div>
+                    
+                    <div class="phone">
+                    	<img src="img/phone.png" alt="Наш телефон" />
+                    	+7 800 707 10 26
+                    </div>
+                    <div class="mail">
+                    	<img src="img/mail.png" alt="e-mail" />
+                    	info@student.club
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu">
+	<div class="container">
+        <div class="row">
+        	<div class="col-lg-12">
+            	<div class="logo">
+                	<a href="#"><img src="img/logo_2.png" alt="Выдача займов на обучение" /></a>
+                    <a href="#">Club Student <br/> <span>Выдача займов на обучение</span></a>
+                </div>
+                <div class="share42init"></div>
+				
+				<script type="text/javascript" src="share42/share42.js">
+                </script>
+                
+                <div class="button_call" id="callback">
+                	<a href="#">заказать звонок</a>
+                </div>
+                
+                
+        </div>
+    </div>
+</div>
+    
+    <div class="wrapper">
+        <div class="container">
+            <div class="navigation">
+                <ul>
+                	<li><a href="#">о нас</a></li>
+                	<li><a href="#">условия займа</a></li>
+                	<li><a href="#">документы</a></li>
+                	<li><a href="#">отзывы</a></li>
+                	<li><a href="#">наши партнеры</a></li>
+                	<li><a href="#">частозадаваемые вопросы</a></li>
+                	<li><a href="#">контакты</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>  
+</div>
+
+<div class="nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="img">
+                </div>
+                <p><span><a href="#">Главная</a></span> >> Заявление-Анкета</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main_content">
+    <div class="container">
+        <div class="row">
+
+        <!--
+        <div id="header">
+          <p><a id="makeWizard" href="#" onclick="MakeWizard()">Нажмите здесь, чтобы изменить форму</a>
+            <span id="info" style="display:none;">Можете ничего не заполнять. Просто нажимайте на кнопку НЕКСТ :)</span></p>
+        </div>-->
+
+
+
+            <div class="anketa">
+                <div class="ank_name">
+                    <h3>регистрация клиентамфо <br/> "Водевиль"</h3>
+                </div>
+                <p>
+                    Заполните онлайн заявку на получение займа на образование в ООО МФО "Водевиль". Мы гарантируем вывести решение по займу в течении 24 часов.
+                </p>
+                <p>
+                    Также вы можете скачать анкету, заполнить её и отправить на info@stydent.club с <br/> пометкой "Заявка на займ. Ф.И.О."
+                </p>
+                <div class="anketa_buttons">
+                    <button>
+                        <img src="img/download.png" alt="Скачать анкету" id="download" />скачать анкету
+                    </button>
+                        
+                    <button id="email">
+                    <img src="img/send.png" alt="отправить на e-mail" id="send" />отправить на e-mail
+                    </button>
+                </div>
+
+                <div class="zaem_info">
+                    <!-- <div class="header">
+                        информация о заемщике
+                    </div>
+                    <hr> -->
+
+                    <form name="form1" id="first_form"
+                    action="send_anketa.php" method="post">
+                        <div class="fields">
+							<fieldset>
+							
+							<div class="header">
+		                        информация о заемщике
+		                    </div>
+		                    <hr>
+
+                            <div class="field">
+                                <input type="text" value=""
+                                name="zaem_name"/>
+                                <label>Имя*</label>
+                                
+                            </div>
+
+                            <div class="field">
+                                <input type="text" value=""
+                                name="zaem_surname"/>
+                                <label>Фамилия*</label>
+                                
+                            </div>
+
+                            <div class="field">
+                                <input type="text" value=""
+                                name="zaem_otchestvo"/>
+                                <label>Отчество*</label>
+                                
+                            </div>
+
+                            <div class="field">
+                                <input type="text" value=""
+                                name="birth_date"/>
+                                <label>Дата рождения*</label>
+                                
+                            </div>
+
+                            <div class="field" id="sex">
+                                <label>Пол*</label>
+                                <input type="radio" name="group1" value="Мужчина" id="male"/>
+                                <label for="male">Мужчина</label>
+                                <input type="radio" name="group1" value="Женщина" id="female"/><label for="female">Женщина</label>
+                            </div>
+
+                            <div class="field">
+                                <input type="text" placeholder="На указанный номер высылается смс" name="mobile"/>
+                                <label>Мобильный <br/> телефон*</label>
+                                
+                            </div>
+
+                            <div class="field">
+                                <input type="text" placeholder="E-mail требуется для активации" value="" name="email" />
+                                <label>E-mail*</label>
+                                
+                            </div>
+
+                            <div class="field" id="price">
+                                <input type="text" value="" name="price"/>
+
+                                <label>Стоимость <br/> обучения*</label>
+                                <div>
+                                    <label id="comment">(Согласно стоимости обучения, указанной в договоре на оказание образовательных услуг)
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <input type="text" value="" name="period"/>
+                                <label>Срок обучения <br/> (в месяцах)*
+                                </label>
+
+                                <div>
+                                    <label id="comment">(Указывается согласно дате окончания договора на оказание <br/> образовательных услуг, на основе данной информации рассчитывается <br/> отсрочка начала выплат по кредиту)
+                                    </label>
+                                </div>
+                                
+                            </div>
+
+                            <div class="field">
+                                <input type="text" value="" name="vuz_name"/>
+                                <label>Наименование образовательного учреждения*</label>
+                                
+                            </div>
+
+                            
+                            <!--
+                            <div class="btns">
+                                <a href="index.html">
+                                    <button class="prev">
+                                    <img src="img/prev.png" alt="Назад" />
+                                        <p>назад</p>
+                                    </button>
+                                </a>
+
+                                <a href="#">
+                                    <button class="next" onclick="javascript: return false;">
+                                    <img src="img/next.png" alt="дальше" />
+                                        <p>дальше</p>
+                                    </button>
+                                </a>
+
+                            </div>-->
+
+
+                            </fieldset>
+                            <fieldset>
+
+							<div class="header">
+		                        Данные паспотра заёмщика
+		                    </div>
+		                    <hr>
+
+                            <div class="field">
+                            	<input type="text" value="" name="pass_number" />
+                                <label>Серия и номер паспорта*</label>
+                            </div>
+
+                            <div class="field">
+                            	<input type="text" value="" name="pass_date" />
+                                <label>Дата выдачи паспорта*</label>
+                            </div>
+
+                            <div class="field">
+                            	<input type="text" value="" name="pass_who_give" />
+                                <label>Кем выдан*</label>
+                            </div>
+
+                            <div class="field">
+                            	<input type="text" value="" name="podrazdel_code" />
+                                <label>Код подразделения*</label>
+                            </div>
+
+                            <div class="field">
+                            	<input type="text" value="" name="birth_place" />
+                                <label>Место рождения*</label>
+                            </div>
+
+                            <div class="reg_address">
+                            	<h3>
+                            		Адрес постоянной регистрации
+                            	</h3>
+                            </div>
+
+                            <div class="field">
+                            	<input type="text" value="" name="post_index" />
+                                <label>Почтовый индекс*</label>
+                            </div>
+
+                            <div class="field">
+                            	<input type="text" value="" name="region" />
+                                <label>Провинция/штат/область/республика*
+                                </label>
+                            </div>
+
+                            <div class="field">
+                            	<input type="text" value="" name="city" />
+                                <label>Город*</label>
+                            </div>
+
+                            <div class="field">
+                            	<input type="text" value="" name="street" />
+                                <label>Улица*</label>
+                            </div>
+
+
+                            <div class="field">
+                            	<input type="text" value="" name="house" />
+                                <label>Здание/строение/дом/корпус*
+                                </label>
+                            </div>
+
+                            <div class="field">
+                            	<input type="text" value="" name="flat" />
+                                <label>Квартира*</label>
+                            </div>
+
+                            <div class="field">
+                            	<input type="text" value="" name="home_phone" />
+                                <label>Домашний телефон*</label>
+                            </div>
+
+                            <div class="field">
+                            	<input type="text" value="" name="reg_date" />
+                                <label>Дата регистрации*</label>
+                            </div>
+
+
+
+                            </fieldset>
+
+                            <fieldset>
+
+
+                            	<div class="header">
+			                        Данные о трудоустройстве заёмщика
+			                    </div>
+			                    <hr>
+
+                            	<div class="field">
+                            		<!--тут нужен выпадающий список-->
+	                            	<!-- <input type="text" value="" name="zaem_stat"/> -->
+									<select
+									name="zaem_stat">
+									  <option>Трудовой договор
+									  </option>
+									  <option>Частная практика
+									  </option>
+									  <option>
+									  	Студент(ка)
+									  </option>
+									  <option>
+									  	Безработный
+									  </option>
+									</select>
+
+
+
+	                                <label>Статус*</label>
+	                            </div>
+
+	                            <div class="field">
+                            		
+	                            	<input type="text" value="" name="company_name" />
+	                                <label>Название организации*</label>
+	                            </div>
+
+	                            <div class="field">
+
+	            <!--Руководитель высшего звена - выпадающий список-->
+	                            	<!-- <input type="text" value="" placeholder="Руководитель высшего звена" name="position" /> -->
+									<select name="position">
+										<option value="">Руководитель высшего звена</option>
+										<option value="">Руководитель среднего звена</option>
+										<option value="">Руководитель начального звена</option>
+										<option value="">Владелец предприятия/Ген.директор/Гл.Бух.</option>
+										<option value="">
+											Высококвалифицированный специалист
+										</option>
+										<option value="">
+											Специалист
+										</option>
+										<option value="">
+											Военнослужащий
+										</option>
+										<option value="">
+											Рабочий
+										</option>
+										<option value="">
+											Служащий
+										</option>
+										<option value="">
+											Судья
+										</option>
+										<option value="">Нотариус</option>
+										<option value="">
+											Государственный гражданский служащий
+										</option>
+									</select>
+
+
+	                                <label>Позиция*</label>
+	                            </div>
+
+	                            <div class="field">
+                            		
+	                            	<input type="text" value="" placeholder="месяц"
+	                            	name="month" />
+	                                <label>Трудовая деятельность на последнем месте работы*</label>
+	                            </div>
+
+	                            <div class="field">
+                            		
+	                            	<input type="text" value="" name="year"/>
+	                                <label>Год*</label>
+	                            </div>
+
+	                            <div class="field">
+                            		
+	                            	<input type="text" value="" name="income" />
+	                                <label>Официальный доход в месяц*
+	                                </label>
+	                            </div>
+
+	                            <div>
+	                            	<h2>Место работы</h2>
+	                            </div>
+
+	                            <div class="field">
+                            		
+	                            	<input type="text" value="" name="work_pos_code" />
+	                                <label>Почтовый индекс*
+	                                </label>
+	                            </div>
+
+	                            <div class="field">
+                            		
+	                            	<input type="text" value="" name="work_region" />
+	                                <label>Провинция/штат/область/республика*
+	                                </label>
+	                            </div>
+
+
+	                            <div class="field">
+                            		
+	                            	<input type="text" value="" name="work_city" />
+	                                <label>Город*
+	                                </label>
+	                            </div>
+
+	                            <div class="field">
+                            		
+	                            	<input type="text" value="" name="work_street" />
+	                                <label>Улица*
+	                                </label>
+	                            </div>
+
+	                            <div class="field">
+                            		
+	                            	<input type="text" value="" name="work_house" />
+	                                <label>Здание/Строение/дом/курпус*
+	                                </label>
+	                            </div>
+
+	                            <div class="field">
+                            		
+	                            	<input type="text" value="" name="work_office" />
+	                                <label>Офис*
+	                                </label>
+	                            </div>
+
+	                            <div class="field">
+                            		
+	                            	<input type="text" value="" name="work_phone" />
+	                                <label>Рабочий телефон*
+	                                </label>
+	                            </div>
+
+	                            <div class="field">
+                            		
+	                            	<input type="text" value="" name="work_inn" />
+	                                <label>ИНН работы
+	                                </label>
+	                            </div>
+
+	                            <div class="field">
+                            		
+	                            	<input type="text" value="" name="work_ogrn" />
+	                                <label>ОГРН работы
+	                                </label>
+	                            </div>
+                            	
+                            </fieldset>
+                            <fieldset>
+                                <div class="header">
+			                        информация о поручителе
+			                    </div>
+			                    <hr>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_name" />
+                                    <label>Имя*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_surname" />
+                                    <label>Фамилия*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_otch" />
+                                    <label>Отчество*
+                                    </label>
+                                </div>
+
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_date_birth" />
+                                    <label>Дата рождения
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_phone" />
+                                    <label>Контактный номер телефона*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_email" />
+                                    <label>e-mail*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_dop_info" />
+                                    <label>Дополнительная контактная информация
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_passport" />
+                                    <label>Серия и номер паспорта
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_date_passport" />
+                                    <label>Дата выдачи паспорта*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_who_give" />
+                                    <label>Кем выдан*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_code_podrazd" />
+                                    <label>Код подразделения*
+                                    </label>
+                                </div>
+
+                                <div>
+                                	<h2>Адрес постоянной регистрации</h2>
+                                </div>
+
+								<div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_post_index" />
+                                    <label>Почтовый индекс*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_region" />
+                                    <label>Провинция/штат/область/республика*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_city" />
+                                    <label>Город*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_street" />
+                                    <label>Улица*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_house" />
+                                    <label>Здание/строение/дом/корпус*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_room" />
+                                    <label>Квартира*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_home_phone" />
+                                    <label>Домашний телефон*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_reg_date" />
+                                    <label>Дата регистрации*
+                                    </label>
+                                </div>
+
+                            </fieldset>
+
+                            <fieldset>
+                            	<div class="header">
+			                        Данные о трудоустройстве поручителя
+			                    </div>
+			                    <hr>
+
+                            	<div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_company" />
+                                    <label>Название организации*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <!-- <input type="text" value="" name="sponsor_position" /> -->
+									<select name="sponsor_position">
+										<option value="">Руководитель высшего звена</option>
+										<option value="">Руководитель среднего звена</option>
+										<option value="">Руководитель начального звена</option>
+										<option value="">Владелец предприятия/Ген.директор/Гл.Бух.</option>
+										<option value="">
+											Высококвалифицированный специалист
+										</option>
+										<option value="">
+											Специалист
+										</option>
+										<option value="">
+											Военнослужащий
+										</option>
+										<option value="">
+											Рабочий
+										</option>
+										<option value="">
+											Служащий
+										</option>
+										<option value="">
+											Судья
+										</option>
+										<option value="">Нотариус</option>
+										<option value="">
+											Государственный гражданский служащий
+										</option>
+									</select>
+
+									
+
+                                    <label>Занимаемая должность*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_period" />
+                                    <label>Период работы в указанной организации*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_year" />
+                                    <label>Год*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_income" />
+                                    <label>Официальный доход в месяц*
+                                    </label>
+                                </div>
+
+                                <div>
+                                	<h2>Место работы</h2>
+                                </div>
+
+                                <div class="field">
+                                    <input type="text" value="" name="sponsor_job_index" />
+                                    <label>Почтовый индекс*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    <input type="text" value="" name="sponsor_job_region" />
+                                    <label>Провинция/штат/область/республика*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_job_city" />
+                                    <label>Город*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_job_street" />
+                                    <label>Улица*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_job_house" />
+                                    <label>Здание/строение/дом/корпус*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_job_office" />
+                                    <label>Офис*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_work_phone" />
+                                    <label>Рабочий телефон*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    
+                                    <input type="text" value="" name="sponsor_job_inn" />
+                                    <label>ИНН работы*
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                    <input type="text" value="" name="sponsor_job_ogrn" />
+                                    <label>ОГРН работы*
+                                    </label>
+                                </div>
+
+
+
+
+                            </fieldset>
+
+                            <fieldset>
+                            	<div>
+                            		<h1>документы</h1>
+                            	</div>
+
+                            	<div class="field">
+                            		<img src="img/upload_ru.png" />
+                                    <input  class="docs" type="file" />
+                                    <input name="vuz_contract" class="show_name" type="text" readonly/>
+
+
+                                    <label>Загрузить договор с образовательным учреждением
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                	<img src="img/upload_ru.png" />
+                                    <input class="docs" type="file"/>
+                                    <input name="pass_photo" class="show_name" type="text" readonly />
+
+
+                                    <label>Загрузить изображение паспорта заемщика
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                	<img src="img/upload_ru.png" />
+                                    <input class="docs" type="file"/>
+                                    <input name="second_doc" class="show_name" type="text" readonly />
+
+
+                                    <label>Загрузить изображение второго документа заемщика
+                                    </label>
+                                </div>
+
+
+                                <div class="field">
+                                	<img src="img/upload_ru.png" />
+                                    <input class="docs" type="file"/>
+                                    <input name="sponsor_passport" class="show_name" type="text" readonly />
+
+
+                                    <label>Загрузить изображение паспорта поручителя
+                                    </label>
+                                </div>
+
+                                <div class="field">
+                                	<img src="img/upload_ru.png" />
+                                    <input class="docs" type="file"/>
+                                    <input name="sponsor_sec_doc" class="show_name" type="text" readonly />
+
+
+                                    <label>Загрузить изображение второго документа поручителя
+                                    </label>
+                                </div>
+
+                            </fieldset>
+
+                            <button id="SaveAccount" name="SaveAccount" type="submit">
+                            	Отправить
+                            </button>
+
+
+                        </div><!--fields-->
+
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+	<div class="top_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-6 contacts">
+					
+					<div class="cont_head">
+						<h2>контакты</h2>
+						<div class="callback" id="callback">
+							<a href="#">заказать звонок</a>
+						</div>
+					</div>
+
+					
+						<div class="cont">
+							<div class="geo">
+								
+							</div>
+							<div class="txt">
+								Факт.адрес:123317, Россия, г.Домодедово,мкр-н Авиационный,
+                                <br/> просп. Ак. Туполева, 6а, технический этаж, секция 7
+							</div>
+						</div>
+
+						<div class="cont">
+							<div class="geo">
+								
+							</div>
+							<div class="txt">
+								Юр.адрес:105246, Россия, г.Домодедово, мкр-н Авиационный,
+                                <br/>просп. Ак. Туполева, 6а,
+                                технический этаж, секция 7
+							</div>
+						</div>
+
+						<div class="cont">
+							<div class="geo">
+								
+							</div>
+							<div class="txt">
+								+7 800 707 10 26 (Бесплатный звонок по России)
+							</div>
+						</div>
+
+						<div class="cont">
+							<div class="geo">
+								
+							</div>
+							<div class="txt">
+								info@student.club
+							</div>
+						</div>
+				</div><!--contacts-->
+			</div>
+			<div class="row">
+				<div class="col-lg-5 col-lg-offset-6 have_quest">
+					<p>
+						остались вопросы? <a href="#">проконсультируйтесь с нашим специалистом</a>
+					</p>
+				</div>
+			</div>
+			
+				<div class="btn2 cont_btn">
+                	<a href="#">подать заявку на займ</a>
+                </div>
+			
+
+
+		</div>
+	</div><!--top footer-->
+
+	<div class="bottom_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 content">
+					<div class="logo">
+						<a href="#"><img src="img/logo_2.png" alt="Выдача займов на обучение" /></a>
+                        <a href="#">Club Student <br><span>Выдача займов на обучение</span></a>
+					</div>
+					<div class="txt">
+						<p>
+							© 2013-2016. ООО МФО <span>«ВОДЕВИЛЬ»</span>. Официальный сайт www.vodewil.pro 
+                        <br/> 
+Все права защищены <br/>
+Свидетельство ЦБ РФ о внесении в реестр микрофинансовых организаций 001603046007546 от 29 <br/> февраля 2016г.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- Форма обратного звонка-->
+
+<div id="popup">
+    <form id="contact_form" role="form" method="post" action="order.php">
+        <h3>Напишите нам</h3>
+        <input type="text" name="name"  placeholder="Как к вам обращаться?">
+        <input type="text" name="tel"  class="required" placeholder="Контакный телефон (обязательно)">
+        <input type="text" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Текст сообщения" rows="5"></textarea>
+        <a href="#" class="btn button form_submit">Заказать</a>
+    </form>
+</div>
+
+<!-- Форма -->
+
+
+
+
+
+
+</body>
+</html>

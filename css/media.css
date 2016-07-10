@@ -1,0 +1,256 @@
+@media screen and (max-width: 1340px){
+	.botan{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.share42init{
+		margin-left: 30px;
+	}
+
+	.navigation ul{
+		margin-top: 6px;
+	}
+
+	.us_bottom{
+		margin-top: 115px;
+	}
+
+	.about_us{
+		height: 770px;
+		background-repeat: repeat;
+	}
+
+	.why_we_need .block_1{
+		margin-top: 0px;
+	}
+
+	.why_we_need .block_1 p, .why_we_need .block_2 p{
+		font-size:10px ;
+	}
+
+	.block_2 h3{
+		margin-top: 20px;
+	}
+
+
+	.why_we_need .pic_1{
+		margin-top: 0px;
+	}
+
+	.b2{
+		margin-top: -35px;
+		height: 320px;
+	}
+
+	.block3 p{
+		font-size:10px !important;
+	}
+
+	.pic3{
+		margin-top: -20px;
+	}
+
+	.sver_link{
+		padding-left: 25px;
+	}
+
+	.calculator .text{
+		width: 200px;
+	}
+
+	.input_block{
+		width: 320px;
+		margin-top:0px;
+		margin-left: 40px;
+	}
+
+	.input_block input{
+		margin-bottom: 10px;
+	}
+
+	.input_block input[name="date"]{
+		margin-left: 0;
+	}
+
+	.calc_form .icon{
+		margin-left: 0;
+	}
+
+	.calc_form{
+		height: 520px;
+		/*width: 55%;*/
+	}
+
+	.btn_block{
+		width: 220px;
+		margin-top: 46px;
+	}
+
+	.btn_block button:nth-child(2n){
+		margin-left: 0;
+	}
+
+	.text_right p{
+		font-size: 10px;
+	}
+
+	.text_right{
+		background: url(../img/figura_23.png) no-repeat center;
+	}
+
+	.block_1_inner h4, .block_2_inner h4{
+		font-size: 13px;
+
+	}
+
+	.block_2_inner h4{
+		font-size:12px;
+		margin-left: 0px;
+	}
+
+	.block_1_inner p{
+		font-size: 10px;
+		font-weight: bold;
+	}
+
+	.line2 p:nth-child(2), .line4 p:nth-child(2){
+		font-size: 10px;
+		margin-left: 0px;
+		width: 173px;
+		margin-left: 20px;
+		font-weight: bold;
+	}
+
+	.line4 p:nth-child(3){
+		margin-left: 112px;
+	}
+
+	.line4 p:nth-child(2){
+		margin-left: 35px;
+	}
+
+	.buttons{
+		margin-left: 33px;
+	}
+
+	.text_right{
+		width: 425px;
+	}
+
+	.why_us .block_1{
+		background-image:url(../img/b1_bg_sm.png);
+	}
+
+	.why_us .block_1 span{
+		font-size: 12px;
+	}
+
+	.why_us .block_1 p{
+		font-size:10px;
+		margin-left: 0px;
+	}
+
+	.why_us .block_1 img{
+		margin-left: 15px;
+	}
+
+	.slider li{
+		width:962px !important;
+	}
+
+	.slider ul li .text{
+		margin-left: 0px;
+		font-size: 10px;
+	}
+
+	.slider ul{
+		padding-left: 0px;
+	}
+
+	#slider{
+		width:93%;
+	}
+
+	.stages .part1{
+		background-image: url(../img/postyplenie_sm.png);
+		background-repeat: no-repeat;
+		width:196px;
+	}
+
+	.stages .part1:nth-child(2){
+		background-image: url(../img/creditovanie_sm.png);
+	}
+
+	.stages .part1:nth-child(3){
+		background-image: url(../img/obuchenie_sm.png);
+		
+	}
+
+	.stages .part1:nth-child(3) p{
+		margin-left: 48px;
+	}
+
+	.stages .part1:nth-child(4){
+		background-image: url(../img/vyplata_zaima_sm.png);
+	}
+
+	.partners .part{
+		width:100px;
+		float:left;
+	}
+
+	.partners .part:nth-child(1){
+		background-image: url(../img/part1_sm.jpg);
+	}
+
+	.partners .part:nth-child(2){
+		background-image: url(../img/part2_sm.jpg);
+	}
+
+	.partners .part:nth-child(3){
+		background-image: url(../img/part3_sm.jpg);
+	}
+
+	.partners .part:nth-child(4){
+		background-image: url(../img/part_4_sm.jpg);
+		margin-left: 35px;
+	}
+
+	.partners .part:nth-child(5){
+		background-image: url(../img/part_5_sm.jpg);
+		margin-left: 35px;
+	}
+
+	.stages .part1 p{
+		margin-top: 53px;
+		margin-left: 39px;
+	}
+
+	.stages .txt{
+		margin-top: 0px;
+		width: 121px; 
+	}
+
+	.stages .txt p{
+		font-size:10px;
+	}
+
+	.botan{
+		display: none;
+	}
+
+	footer{
+		background: #208d6e;
+	}
+
+	.bottom_footer .content .txt p {
+		font-size: 9px;
+	}
+
+	.anketa p{
+		font-size:11px;
+	}
+
+}
